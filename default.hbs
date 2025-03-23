@@ -62,34 +62,6 @@
         </div>
     </header>
 
-    {{#is "home"}}
-    <div class="site-cover{{#unless @site.cover_image}} no-image{{/unless}} u-overlay">
-
-        {{#if @site.cover_image}}
-            <img class="cover-image jarallax-img u-object-fit" src="{{img_url @site.cover_image}}" alt="{{@site.title}}">
-        {{/if}}
-
-        <div class="cover-content">
-            {{#if @site.description}}
-                <div class="cover-description">{{@site.description}}</div>
-            {{/if}}
-            <div class="search">
-                <form class="search-form">
-                    <div class="form-wrapper">
-                        <div class="search-field" data-ghost-search>Search posts, tags, authors...</div>
-                        <button class="form-button search-button" type="submit" data-ghost-search>
-                            {{> "icons/search"}}
-                            {{> "icons/close"}}
-                        </button>
-                    </div>
-                </form>
-                <div class="search-result"></div>
-            </div>
-        </div>
-
-    </div>
-    {{/is}}
-
     <div class="site-content">
         {{{body}}}
     </div>
