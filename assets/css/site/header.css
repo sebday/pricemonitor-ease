@@ -8,6 +8,16 @@
     font-weight: 500;
 }
 
+.gh-head-menu {
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.gh-head-menu a {
+    color: #4c566a;
+}
+
 .gh-head-menu::after {
     display: none;
 }
